@@ -1,0 +1,91 @@
+def : A component is a reuable piece of UI (user interface)
+
+1.reuable code
+2.easy to manage 
+3.organized structure 
+4.faster development 
+5.easy debugging 
+
+Each Component should start with capital letter
+
+2 types of components 
+
+1. Class Component 
+2. functional component 
+
+class : blue print of an object 
+syntax:
+class classname{
+
+}
+
+in jsx if developer wants to use class selector then they have to use className 
+
+inheritance : inheriting the properties from one class to another class
+render : used to access the react class component 
+
+functions : block of code which is used to do some tasks and it will be executed when we are calling it explicitly 
+function functionName(){
+    
+}
+
+functions: state less components => statefull => useState()
+a=90
+a+=1 => 91 =>react 18=> Hooks 
+import module_name from ' '
+import {useState} from 'react'
+
+Syntax:
+const[count , setCount]=useState(0);
+
+
+class components : state full component default 
+a=90
+a+=1 =>91
+
+
+State Full => handle its own state 
+1. Manages its own state 
+2. can change data and re-render UI 
+3. uses useState() =>(function )
+
+
+Hooks :
+1.useState : to manage states with the help of function 
+2.useEffect : react hook used to handle side effect in functonal component 
+where to use :
+API calls
+localStorage Operation 
+Timer(setTimeout , setInterval)
+Event Listeners
+DOM updates 
+
+1.useEffect with no dependency
+useEffect(()=>{
+
+})
+i. Fast render 
+ii. every re-render 
+
+2.useEffect with Dependency Array 
+useEffect(()=>{
+
+},[count]);
+when does it runs :
+i. first render 
+ii.whenever count change 
+
+usecases:
+Recalculation 
+sync data 
+
+3.useEffect with empty dependency array 
+useEffect(()=>{
+
+},[]);
+i. only first render 
+
+usecases: 
+API calls 
+Initializing the data 
+
