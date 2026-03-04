@@ -6,6 +6,7 @@ import Navbar from './components/Ecomm/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
+import InputForm from './components/formValidation/InputForm'
 
 function App() {
   const data={
@@ -24,11 +25,12 @@ function App() {
       
     // </BrowserRouter>
   <>
-  <HomePage userData={data}/>
-  <Container>
-  <h1 className="text-primary">Hello This is Bootstrap</h1>
-  <Button variant="primary">Click</Button>
-  </Container>
+  {/* <HomePage userData={data}/> */}
+ 
+  {/* <h1 className="text-primary">Hello This is Bootstrap</h1> */}
+  {/* <Button variant="primary">Click</Button> */}
+  <InputForm/>
+
   </>
   )
 }
