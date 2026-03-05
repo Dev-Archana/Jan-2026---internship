@@ -8,7 +8,7 @@ single threaded concept -> event looping
 // FileSystem , http , path ,os ,events => built-in modules
 // practice programs : read a file , write a file , appending , create http req and res 
 
-// const fs=require("fs");
+const fs=require("fs");
 // syntax : writeFile("filename","data","callback")
 // fs.writeFile("test.txt","Hi Interns",(err)=>{
 //     if(err){
@@ -24,7 +24,7 @@ single threaded concept -> event looping
 //         console.log("CReated and appended")
 //     }
 // });
-/*fs.writeFileSync("test2.txt","write and sync1")
+fs.writeFileSync("test2.csv","write and sync1")
 console.log("sync")
 /*
 writeFile()   writeFileSync()
