@@ -1,0 +1,26 @@
+express is a Node.js Framework use to build web application and API easy.
+->without express , node.js codes becomes long and complex
+
+1. Easier Routing 
+2. Supports Middleware
+3. built in REST API 
+4. Handles HTTP requests and Responsis Easily 
+
+
+browser requests => Express Routes => sendFile() => HTML sent to browser 
+
+
+MERN Stack Flow of execution :
+React => Frontend(UI)
+express => Backend (API)
+Mongo => Database 
+
+React UI (5173)
+    |
+API Request 
+    |
+Express (5000)
+    |
+Database 
+    |
+Response from database
